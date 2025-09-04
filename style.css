@@ -18,7 +18,7 @@
 
 /* Section  */
 section#header {
-    height: 100dvh;
+    min-height: 100dvh;
     width: 100%;
     background: var(--color-1);
     overflow: hidden;
@@ -215,7 +215,7 @@ section#header .home {
 /* Project  */
 
 section .project-div {
-    height: calc(100vh - 75px);
+    min-height: calc(100vh - 75px);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -225,6 +225,7 @@ section .project-div {
 }
 
 .project-div .project-row {
+    padding: 1.5rem 0 2.5rem 0;
     height: auto;
     width: 95%;
     display: grid;
@@ -267,15 +268,19 @@ section .project-div {
 }
 
 .card#project4{
-    animation: slideBottomLeftCurve 0.5s ease forwards;
+    animation: slideLeft 0.5s ease forwards;
 }
 
 .card#project5{
-    animation: slideBottom 0.5s ease forwards;
+    animation: fadeCenter 0.5s ease forwards;
 }
 
 .card#project6{
-    animation: slideBottomRightCurve 0.5s ease forwards;
+    animation: slideRight 0.5s ease forwards;
+}
+
+.card#project7{
+    animation: slideBottomLeftCurve 0.5s ease forwards;
 }
 
 .card#project1::before{
@@ -423,6 +428,29 @@ section .project-div {
     opacity: 1;
 }
 
+.card#project7::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: linear-gradient(#ffffff65, #2a75ca), url('./img/Interview-AI.png');
+    background-size: 100% 100%;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 1;
+}
+
+.card#project7:hover::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: linear-gradient(#ffffff00, #2a75ca00), url('./img/Interview-AI.png');
+    background-size: 100% 100%;
+    border-radius: 10px;
+    z-index: 1; 
+    opacity: 1;
+}
 /* Project  */
 
 /* Section  */
@@ -484,6 +512,16 @@ section .project-div {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeCenter {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -630,11 +668,11 @@ section .project-div {
         min-height: calc(100dvh - 75px);
         height: unset;
         flex-direction: column;
-        padding: 2rem 0 0 0 ;
         overflow:scroll;
     }
 
     .project-div .project-row{
+        padding: 1.5rem 0 0.5rem 0;
         grid-template-rows: 1fr;
         grid-template-columns: 0;
         width: 100%;
