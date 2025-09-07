@@ -156,25 +156,6 @@ section#header .home {
     animation: slideLeft 0.5s ease forwards
 }
 
-.home-content .btn {
-    height: 40px;
-    width: 115px;
-    display: grid;
-    place-content: center;
-    box-shadow: inset 0px 0px 0px 1.5px #fff;
-    text-decoration: none;
-    color: white;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    animation: slideBottom 0.5s ease forwards;
-    transition: var(--eff);
-}
-
-.home-content .btn:hover {
-    background: var(--color-2);
-    box-shadow: none;
-}
-
 /* Home Left  */
 
 /* Home Right */
