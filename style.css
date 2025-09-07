@@ -668,6 +668,10 @@ section .project-div {
         padding: 0 1rem
     }
 
+    .card h1{
+        font-size: 1.5rem;
+    }
+
     .card p{
         margin-top: 0.25rem;
         font-size: 0.85rem;
