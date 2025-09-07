@@ -134,7 +134,7 @@ section#header .home {
 }
 
 .home-left .home-content {
-    height: 93%;
+    height: 68%;
     width: 88%;
     color: white;
     display: flex;
@@ -619,7 +619,7 @@ section .project-div {
     }
 
     .home-left .home-content {
-        height: 75%;
+        height: 70%;
         width: 80%;
     }
 
